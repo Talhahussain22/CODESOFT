@@ -9,6 +9,9 @@ m.geometry("750x600")
 m.title("To-do-list")
 m.maxsize(750,600)
 m.minsize(750,600)
+image=Image.open('tick.png')
+resize=image.resize((50,50))
+resized=ImageTk.PhotoImage(resize)
 
 def add():
     content=e.get()
